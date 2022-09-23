@@ -1,0 +1,21 @@
+:root {
+    --c1: #2E2F30;
+    --c2: #00E58B;
+    --c3: #ffffff;
+}
+
+.c1 {
+    background-color: var(--c1);
+}
+.c3 {
+    color: var(--c3);
+}
+.c3:hover {
+    color: var(--c2);
+}
+.active {
+    background-color: var(--c2) !important;
+}
+
+.nav-pills, .nav-link {
+}
