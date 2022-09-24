@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&display=swap');
+
 :root {
     --c1: #2E2F30;
     --c2: #00E58B;
@@ -17,5 +19,9 @@
     background-color: var(--c2) !important;
 }
 
-.nav-pills, .nav-link {
+#fonts {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 10px;
 }

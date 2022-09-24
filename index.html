@@ -14,7 +14,7 @@
     <nav class=" bg-light bg-dark">
       <div class="container-fluid d-flex flex-wrap">
         <ul class="nav me-auto">
-          <li class="nav-item"><a href="#" class="nav-link link-dark px-2 text-light">Bond Perfumeria</a></li>
+          <li class="nav-item"><a id="fonts" href="#" class="nav-link link-dark px-2 text-light">Bond Perfumeria</a></li>
         </ul>
         <ul class="nav">
           <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=+573202028049&text=Hola!%20quiero%20informaci%C3%B3n%20de%20las%20fragancias." class="nav-link link-dark px-2  text-light"><i class="bi bi-whatsapp"></i>&nbsp;+573202028049</a></li>
@@ -31,6 +31,59 @@
         </ul>
       </header>
     </div>
+
+    <!-- hero -->
+    <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1">Bond Perfumeria</h1>
+        <p class="lead">Seduce, enamora y deja huella con fragancias que se adaptan a tu personalidad.</p>
+        <p class="lead">Una fragancia bien escogida puede ser una característica distintiva. Es la primera cosa que la gente percibe cuando entras en una habitación y la última que sienten cuando te vas'. <cite>Giorgio Armani.</cite></p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+        </div>
+      </div>
+
+      <!-- sliders img -->
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="rounded-lg-3" src="/assets/img/img-hero.jpg" alt="" width="900">
+              </div>
+
+
+              <div class="carousel-item">
+                <img class="rounded-lg-3" src="/assets/img/img-hero.jpg" alt="" width="900">
+              </div>
+
+
+              <div class="carousel-item">
+                <img class="rounded-lg-3" src="/assets/img/img-hero.jpg" alt="" width="900">
+              </div>
+
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>
 
 <script src="/assets/js/bootstrap.min.js"></script>
 </body>
