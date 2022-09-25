@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!--  -->
+    <!-- slider -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link rel="stylesheet" href="/assets/css/slider-brand.css">
 </head>
 <body>
+
     <!-- navbar -->
     <nav class=" bg-light bg-dark">
       <div class="container-fluid d-flex flex-wrap">
         <ul class="nav me-auto">
-          <li class="nav-item"><a id="fonts" href="#" class="nav-link link-dark px-2 text-light">Bond Perfumeria</a></li>
+          <li class="nav-item"><a id="fonts" href="/index.html" class="nav-link link-dark px-2 text-light">Bond Perfumeria</a></li>
         </ul>
         <ul class="nav">
           <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=+573202028049&text=Hola!%20quiero%20informaci%C3%B3n%20de%20las%20fragancias." class="nav-link link-dark px-2  text-light"><i class="bi bi-whatsapp"></i>&nbsp;+573202028049</a></li>
@@ -29,9 +30,9 @@
     <div class="container-fluid d-flex justify-content-center flex-wrap c1">
       <header class="d-flex justify-content-center py-1">
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="btn btn-success active">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link c3">Hombre</a></li>
-          <li class="nav-item"><a href="#" class="nav-link c3">Mujer</a></li>
+          <li class="nav-item margin-btn"><a href="#" class="btn btn-success active">Home</a></li>
+          <li class="nav-item margin-btn"><a href="#" class="nav-link c3">Hombre</a></li>
+          <li class="nav-item margin-btn"><a href="#" class="nav-link c3">Mujer</a></li>
         </ul>
       </header>
     </div>
@@ -50,10 +51,11 @@
         </div>
       </div>
     </main>
+
     <!-- slider -->
     <section>
       <div class="container py-5">
-        <h2 class="text-center font-weight-bold">Top Brands</h2>
+        <h2 class="text-center font-weight-bold title-footer">Top Brands</h2>
         <section class="customer-logos slider py-5">
             <div class="slide"><img src="/assets/img/slide1.png" alt="logo"></div>
             <div class="slide"><img src="/assets/img/slide2.png" alt="logo"></div>
@@ -66,6 +68,28 @@
         </section>
     </div>
     </section>
+
+    <!-- newsletter -->
+    <section class="bg-dark text-light">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Suscribete a nuestro newsletter</h5>
+                <p>Noticias de ofertas exclusivas cada semana.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Correo electrónico</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
+                  <button class="btn btn-success" type="button">Suscribete</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
     <!-- footer -->
     <div class="container">
       <footer class="py-3 my-4">
@@ -75,8 +99,8 @@
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-facebook icons-sm"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-whatsapp icons-sm"></i></a></li>
         </ul>
-        <p class="text-center text-muted">Developed by <a href="https://github.com/CarlDesigner" class="copy">CarlDesigner </a>&copy; 2022 <strong>Bond Perfumeria</strong>, Todos los izquierdos reservados</p>
-        <p class="text-center text-muted">Bogotá, Colombia</p>
+        <p class="text-center text-muted">Developed by <a href="https://github.com/CarlDesigner" class="copy">CarlDesigner </a>&copy; 2022 <strong>Bond Perfumeria</strong>, Todos los izquierdos reservados.</p>
+        <p class="text-center text-muted">Bogotá, Colombia.</p>
       </footer>
     </div>
 
