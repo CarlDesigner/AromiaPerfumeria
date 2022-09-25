@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+
+:root {
+    --bg-product: #2E2F30;
+    --bg-main-products: #0E0E0F;
+    --c2: #00E58B;
+}
+
+.card {
+    background-color: var(--bg-product);
+}
+
+.bg-products {
+    background-color: var(--bg-main-products);
+}
+
+.img-product {
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+}
