@@ -1,21 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
-
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*===== VARIABLES CSS =====*/
 :root {
-    --bg-product: #2E2F30;
-    --bg-main-products: #0E0E0F;
-    --c2: #00E58B;
+  /*===== Colores =====*/
+  --c1: #2E2F30;
+  --c2: #00E58B;
+  --c3: #ffffff;
+  --first-color: #F2A20C;
+  --white-color: #E9EAEC;
+  --dark-color: #272D40;
+  --dark-color-lighten: #F2F5FF;
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
 }
 
-.card {
-    background-color: var(--bg-product);
+/*===== BASE =====*/
+*, ::before, ::after {
+  box-sizing: border-box;
 }
 
-.bg-products {
-    background-color: var(--bg-main-products);
+
+
+h1, p {
+  margin: 0;
 }
 
-.img-product {
-    height: 20rem;
-    width: 20rem;
-    margin: auto;
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*===== CARD =====*/
+
+.card____ {
+  width: 250px;
+  height: 320px;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+  padding: 2rem 2rem 0;
+  color: var(--white-color);
+  overflow-y: hidden;
+}
+
+.card____img {
+  position: absolute;
+  width: 210px;
+  filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
+}
+
+.card____data {
+  transform: translateY(13.2rem);
+  text-align: center;
+}
+
+.card____title {
+  font-size: var(--h1-font-size);
+  color: #fff;
+  margin-bottom: .5rem;
+}
+
+.card____button {
+  display: block;
+  width: max-content;
+  padding: 1rem 2rem;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border-radius: .5rem;
+  transition: .2s;
+  opacity: 0;
+}
+
+.card____button:hover {
+  box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
+}
+
+.card____img, 
+.card____data, 
+.card____title {
+  transition: .5s;
+}
+
+/* Hover card effect */
+.card____:hover .card____img {
+  transform: translate(-1.5rem, -2.5rem) rotate(-20deg);
+}
+
+.card____:hover .card____data {
+  transform: translateY(1.8rem);
+}
+
+.card____:hover .card____title {
+  color: var(--c2);
+  transform: translateX(-0.5rem);
+  margin-bottom: 0;
+}
+
+.card____:hover .card____button {
+  transition-delay: .2s;
+  opacity: 1;
 }

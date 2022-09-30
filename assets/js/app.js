@@ -11,23 +11,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
             shuffle(data);
             data.forEach(product => {
                 productContainer.innerHTML += `
-            <div class="container">
-                <div class="row-cols-md-3 py-5">
-                    <div class="col">
-                        <div class="card shadow-sm py-2">
-                            <img src="/assets/img/products/${product.id}.png" class="img-product py-3" alt="">
-                
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                    <a type="button" class="btn btn-success btn-lg"><i class="bi bi-whatsapp"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <article class="card">
+                <div class="card__img">
+                    <img src="/assets/img/products/Group 39.png" alt="">
                 </div>
-            </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
             `
             })
 
