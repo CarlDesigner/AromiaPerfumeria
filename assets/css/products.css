@@ -104,3 +104,7 @@ img {
   transition-delay: .2s;
   opacity: 1;
 }
+
+.pagination {
+  place-content: center;
+}
