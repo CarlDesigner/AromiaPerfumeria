@@ -23,16 +23,40 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 /div>
             `
             })
-
             console.log(data);
         })
-})
+});
 
 
+/* pagina2 */
+document.addEventListener('DOMContentLoaded', (event) => {
 
+    const mens2Container = document.querySelector('#mens2Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
 
-
-
+    fetch('/assets/data/mens2.json')
+        .then(response => response.json())
+        .then(data => {
+            shuffle(data);
+            data.forEach(mens2 => {
+                mens2Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${mens2.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${mens2.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
 
 
 
