@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch('/assets/data/mens5.json')
         .then(response => response.json())
         .then(data => {
-            /* shuffle(data); */
+            shuffle(data);
             data.forEach(mens5 => {
                 mens5Container.innerHTML += `
                 <div class="card____ bg-dark">
@@ -138,6 +138,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     <div class="card____content">
                         <div class="card____data">
                             <h1 class="card____title py-3">${mens5.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
+/* pagina6 */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const mens6Container = document.querySelector('#mens6Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/mens6.json')
+        .then(response => response.json())
+        .then(data => {
+            shuffle(data);
+            data.forEach(mens6 => {
+                mens6Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${mens6.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${mens6.nombre}</h1>
                             <a href="#" class="card____button">Comprar</a>
                         </div>
                     </div>
