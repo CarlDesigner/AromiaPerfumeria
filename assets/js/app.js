@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         })
 });
 
-/* pagina */
+/* pagina3 */
 document.addEventListener('DOMContentLoaded', (event) => {
 
     const mens3Container = document.querySelector('#mens3Container');
@@ -78,6 +78,66 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     <div class="card____content">
                         <div class="card____data">
                             <h1 class="card____title py-3">${mens3.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
+/* pagina4 */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const mens4Container = document.querySelector('#mens4Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/mens4.json')
+        .then(response => response.json())
+        .then(data => {
+            shuffle(data);
+            data.forEach(mens4 => {
+                mens4Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${mens4.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${mens4.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
+/* pagina5 */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const mens5Container = document.querySelector('#mens5Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/mens5.json')
+        .then(response => response.json())
+        .then(data => {
+            shuffle(data);
+            data.forEach(mens5 => {
+                mens5Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${mens5.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${mens5.nombre}</h1>
                             <a href="#" class="card____button">Comprar</a>
                         </div>
                     </div>
