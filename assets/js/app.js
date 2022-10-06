@@ -58,6 +58,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
         })
 });
 
+/* pagina */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const mens3Container = document.querySelector('#mens3Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/mens3.json')
+        .then(response => response.json())
+        .then(data => {
+            shuffle(data);
+            data.forEach(mens3 => {
+                mens3Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${mens3.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${mens3.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
 
 
 
