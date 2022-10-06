@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch('/assets/data/mens5.json')
         .then(response => response.json())
         .then(data => {
-            shuffle(data);
+            /* shuffle(data); */
             data.forEach(mens5 => {
                 mens5Container.innerHTML += `
                 <div class="card____ bg-dark">
