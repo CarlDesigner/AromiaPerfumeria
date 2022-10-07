@@ -178,6 +178,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
         })
 });
 
+/* pagina7 */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const mens7Container = document.querySelector('#mens7Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/mens7.json')
+        .then(response => response.json())
+        .then(data => {
+            /* shuffle(data); */
+            data.forEach(mens7 => {
+                mens7Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${mens7.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${mens7.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
 
 
 
