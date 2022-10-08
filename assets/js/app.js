@@ -234,3 +234,35 @@ $(document).ready(function () {
         }]
     });
 });
+
+
+
+/* //////////////////////////PRODUCT MUJER////////////////////////// */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const womenContainer = document.querySelector('#womenContainer');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/women.json')
+        .then(response => response.json())
+        .then(data => {
+            shuffle(data);
+            data.forEach(women => {
+                womenContainer.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${women.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${women.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
