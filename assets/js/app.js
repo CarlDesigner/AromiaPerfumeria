@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch('/assets/data/mens7.json')
         .then(response => response.json())
         .then(data => {
-            /* shuffle(data); */
+            shuffle(data);
             data.forEach(mens7 => {
                 mens7Container.innerHTML += `
                 <div class="card____ bg-dark">
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch('/assets/data/women.json')
         .then(response => response.json())
         .then(data => {
-            shuffle(data);
+            /* shuffle(data); */
             data.forEach(women => {
                 womenContainer.innerHTML += `
                 <div class="card____ bg-dark">
@@ -266,3 +266,124 @@ document.addEventListener('DOMContentLoaded', (event) => {
             console.log(data);
         })
 });
+
+/* pagina2 */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const women2Container = document.querySelector('#women2Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/women2.json')
+        .then(response => response.json())
+        .then(data => {
+            /* shuffle(data); */
+            data.forEach(women2 => {
+                women2Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${women2.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${women2.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
+/* pagina3 */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const women3Container = document.querySelector('#women3Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/women3.json')
+        .then(response => response.json())
+        .then(data => {
+            /* shuffle(data); */
+            data.forEach(women3 => {
+                women3Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${women3.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${women3.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
+/* pagina4 */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const women4Container = document.querySelector('#women4Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/women4.json')
+        .then(response => response.json())
+        .then(data => {
+            /* shuffle(data); */
+            data.forEach(women4 => {
+                women4Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${women4.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${women4.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
+/* pagina5 */
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const women5Container = document.querySelector('#women5Container');
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    fetch('/assets/data/women5.json')
+        .then(response => response.json())
+        .then(data => {
+            shuffle(data);
+            data.forEach(women5 => {
+                women5Container.innerHTML += `
+                <div class="card____ bg-dark">
+                    <img src="/assets/img/products/${women5.id}.png" alt="" class="card____img">
+      
+                    <div class="card____content">
+                        <div class="card____data">
+                            <h1 class="card____title py-3">${women5.nombre}</h1>
+                            <a href="#" class="card____button">Comprar</a>
+                        </div>
+                    </div>
+                /div>
+            `
+            })
+            console.log(data);
+        })
+});
+
