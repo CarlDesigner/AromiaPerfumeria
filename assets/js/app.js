@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch('/assets/data/women.json')
         .then(response => response.json())
         .then(data => {
-            /* shuffle(data); */
+            shuffle(data);
             data.forEach(women => {
                 womenContainer.innerHTML += `
                 <div class="card____ bg-dark">
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch('/assets/data/women2.json')
         .then(response => response.json())
         .then(data => {
-            /* shuffle(data); */
+            shuffle(data);
             data.forEach(women2 => {
                 women2Container.innerHTML += `
                 <div class="card____ bg-dark">
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch('/assets/data/women3.json')
         .then(response => response.json())
         .then(data => {
-            /* shuffle(data); */
+            shuffle(data);
             data.forEach(women3 => {
                 women3Container.innerHTML += `
                 <div class="card____ bg-dark">
@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch('/assets/data/women4.json')
         .then(response => response.json())
         .then(data => {
-            /* shuffle(data); */
+            shuffle(data);
             data.forEach(women4 => {
                 women4Container.innerHTML += `
                 <div class="card____ bg-dark">
