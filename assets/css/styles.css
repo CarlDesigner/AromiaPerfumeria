@@ -145,7 +145,7 @@
 /* RESPONSIVE */
 
 
-@media screen and (max-width: 464px) {
+@media screen and (max-width: 480px) {
   .me-auto {
     justify-content: center;
     width: 100%;
@@ -156,9 +156,8 @@
     width: 100%;
   }
 
-  header {
-    background-color: rgb(0, 136, 255);
-    width: 100%;
+  .nav-pills {
+    background-color: rebeccapurple;
+    flex-wrap: nowrap;
   }
-
 }
