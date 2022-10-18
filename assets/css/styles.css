@@ -145,7 +145,7 @@
 /* RESPONSIVE */
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 464px) {
   .me-auto {
     justify-content: center;
     width: 100%;
@@ -157,7 +157,7 @@
   }
 
   header {
-    background-color: red;
+    background-color: rgb(0, 136, 255);
     width: 100%;
   }
 
