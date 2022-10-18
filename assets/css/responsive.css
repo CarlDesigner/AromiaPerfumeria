@@ -1,6 +1,12 @@
-@media (min-width: 700px) and (max-width: 800px) {
-    .nav {
-        width: 30%;
-        float: right;
+@media (min-width: 0px) and (max-width: 480px) {
+    .me-auto {
+        justify-content: center;
+        width: 100%;
     }
+
+    .nav {
+        justify-content: center;
+        width: 100%;
+    }
+
 }
