@@ -157,7 +157,11 @@
   }
 
   .nav-pills {
-    background-color: rebeccapurple;
     flex-wrap: nowrap;
   }
+
+  .fonts-2 {
+    font-size: 34px;
+  }
+
 }
