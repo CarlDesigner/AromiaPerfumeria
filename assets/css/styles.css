@@ -145,7 +145,7 @@
 /* RESPONSIVE */
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .me-auto {
     justify-content: center;
     width: 100%;
