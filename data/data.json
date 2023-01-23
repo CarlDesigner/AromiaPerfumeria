@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "image": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "name": "Perfume de rosa",
+            "description": "Este perfume es una mezcla de notas de rosa, jazmín y lirio, con un toque fresco de limón y bergamota. Es perfecto para usar en cualquier ocasión.",
+            "price": "$50"
+        },
+        {
+            "image": "https://example.com/images/perfume2.jpg",
+            "name": "Perfume de lavanda",
+            "description": "Este perfume tiene una fragancia fresca y relajante de lavanda, combinado con notas de salvia y romero. Es perfecto para usar en momentos de relajación y meditación.",
+            "price": "$40"
+        },
+        {
+            "image": "https://example.com/images/perfume3.jpg",
+            "name": "Perfume de sandalo",
+            "description": "Este perfume tiene una fragancia cálida y misteriosa de madera de sándalo, combinado con notas de canela y cedro. Es perfecto para usar en noches de gala y eventos especiales.",
+            "price": "$60"
+        },
+        {
+            "image": "https://example.com/images/perfume4.jpg",
+            "name": "Perfume de jazmín",
+            "description": "Este perfume tiene una fragancia dulce y seductora de jazmín, combinado con notas de vainilla y miel. Es perfecto para usar en citas románticas y ocasiones especiales.",
+            "price": "$55"
+        },
+        {
+            "image": "https://example.com/images/perfume5.jpg",
+            "name": "Perfume de limón",
+            "description": "Este perfume tiene una fragancia fresca y energizante de limón, combinado con notas de hierba de limón y verbena. Es perfecto para usar en días de verano y actividades al aire libre.",
+            "price": "$45"
+        },
+        {
+            "image": "https://example.com/images/perfume6.jpg",
+            "name": "Perfume de menta",
+            "description": "Este perfume tiene una fragancia fresca y revigorizante de menta, combinado con notas de eucalipto y pino. Es perfecto para usar en días de invierno y para ayudar a mantener la concentración.",
+            "price": "$50"
+        },
+        {
+            "image": "https://example.com/images/perfume7.jpg",
+            "name": "Perfume de canela",
+            "description": "Este perfumetiene una fragancia cálida y acogedora de canela, combinado con notas de nuez moscada y clavo. Es perfecto para usar en días fríos y durante las fiestas navideñas.",
+            "price": "$35"
+        },
+        {
+            "image": "https://example.com/images/perfume8.jpg",
+            "name": "Perfume de cítricos",
+            "description": "Este perfume tiene una fragancia fresca y cítrica de limón, naranja y pomelo, combinado con notas de hierba de limón y verbena. Es perfecto para usar en días de verano y actividades al aire libre.",
+            "price": "$40"
+        },
+        {
+            "image": "https://example.com/images/perfume9.jpg",
+            "name": "Perfume de madera de cedro",
+            "description": "Este perfume tiene una fragancia cálida y misteriosa de madera de cedro, combinado con notas de patchouli y especias. Es perfecto para usar en ocasiones especiales y eventos formales.",
+            "price": "$60"
+        },
+        {
+            "image": "https://example.com/images/perfume10.jpg",
+            "name": "Perfume de pachuli",
+            "description": "Este perfume tiene una fragancia cálida y sensual de patchouli, combinado con notas de sándalo y jengibre. Es perfecto para usar en noches de gala y eventos especiales.",
+            "price": "$55"
+        },
+        {
+            "image": "https://example.com/images/perfume11.jpg",
+            "name": "Perfume de lavanda y manzanilla",
+            "description": "Este perfume tiene una fragancia fresca y relajante de lavanda y manzanilla, combinado con notas de romero y hierba gatera. Es perfecto para usar en momentos de relajación y meditación.",
+            "price": "$45"
+        },
+        {
+            "image": "https://example.com/images/perfume12.jpg",
+            "name": "Perfume de almizcle",
+            "description": "Este perfume tiene una fragancia cálida y sensual de almizcle, combinado con notas de ámbar y cedro. Es perfecto para usar en ocasiones especiales y eventos formales.",
+            "price": "$60"
+        }
+    ]
+}

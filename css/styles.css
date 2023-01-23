@@ -1,0 +1,17 @@
+/* Reset estilos para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.custom-image {
+  object-fit: contain; /*se ajusta la imagen a las dimensiones de la tarjeta*/
+  width: 100%; /*se establece el ancho al 100% para que se ajuste al ancho de la tarjeta*/
+  height: 100%; /*se establece el alto al 100% para que se ajuste al alto de la tarjeta*/
+}
+
+.custom-card-container {
+  margin: 0px 50px;
+}
