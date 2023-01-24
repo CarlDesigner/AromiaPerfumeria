@@ -1,6 +1,6 @@
 /* consumiendo API de unplash */
 const API_KEY = "ou9-JPfFAeSLdiH1-5hSdC2Gwc8AABTGWQQ0ZPW3Tng";
-const NUM_PHOTOS = 8;
+const NUM_PHOTOS = 6;
 const API_ENDPOINT = `https://api.unsplash.com/photos/random?count=${NUM_PHOTOS}&client_id=${API_KEY}&query=perfume`;
 
 async function getPhotos() {
@@ -34,18 +34,17 @@ function createCard(imgSrc, imgAlt, name, price) {
   img.src = imgSrc;
   img.alt = imgAlt;
   img.onload = function () {
-    const canvas = document.createElement("canvas");
-    canvas.width = 300;
-    canvas.height = 400;
-    const ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0, 300, 400);
-
-    imgSrc = canvas.toDataURL();
+    /* const canvas = document.createElement("canvas"); */
+    /* canvas.width = 300;
+    canvas.height = 400; */
+    /* const ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0, 300, 400); */
+    /* imgSrc = canvas.toDataURL(); */
   };
 
   card.innerHTML = `
     <div class="product-card">
-      <img class="product-image" src="${imgSrc}" width="270px" height="340px">
+      <img class="product-image" src="${imgSrc}" width="180px" height="300px">
       <h3 class="product-name">${name}</h3>
       <p class="product-price">${price}</p>
       <button class="buy-button">Comprar</button>

@@ -1,4 +1,4 @@
-/* Reset estilos para todos los elementos */
+/* Reset estilos para todos #1 los elementos */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@
 .product-card {
   width: 300px;
   overflow: hidden;
+  margin: 0;
 }
 
 .product-image {
@@ -47,4 +48,11 @@
 
 .product-card {
   margin: 0 auto;
+}
+
+
+.image-bg {
+  background-image: url(https://acortar.link/O5yPpC);
+  background-size: cover;
+
 }
