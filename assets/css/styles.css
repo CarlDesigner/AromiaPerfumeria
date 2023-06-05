@@ -426,6 +426,10 @@ body.dark-theme {
   height: 214px;
   margin-bottom: var(--mb-1);
 }
+/* .featured__img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+} */
 
 .featured__title, 
 .featured__price {
