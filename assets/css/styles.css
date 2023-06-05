@@ -343,6 +343,7 @@ body.dark-theme {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-bold);
   margin-bottom: var(--mb-1);
+  text-transform: uppercase;
 }
 
 .home__description {

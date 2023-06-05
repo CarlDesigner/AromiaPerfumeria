@@ -5,25 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 
         <!--=============== BOXICONS ===============-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+        
         <!--=============== SWIPER CSS ===============--> 
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive watches website - Bedimcode</title>
+        <title>Aromia Perfumeria</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <i class='bx bxs-watch nav__logo-icon'></i> Rolex
+                    <svg width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.75 4.79433C20.25 6.71714 21 8.49204 21 10.5628C21 13.0772 19.95 15.4437 17.4 18.1061C14.55 21.0642 12 24.3182 12 27.5722C12 28.1638 12.15 28.7555 12.3 29.495C12.3 29.6429 12.3 29.7908 12.15 29.9387C12 30.0866 11.85 29.9387 11.85 29.7908C10.35 27.868 9.6 26.0931 9.6 24.0224C9.6 21.508 10.65 19.1414 13.2 16.4791C16.05 13.5209 18.6 10.2669 18.6 7.01295C18.6 6.42132 18.45 5.82969 18.3 5.09015C18.3 4.94224 18.3 4.79433 18.45 4.64642C18.6 4.64642 18.6 4.64642 18.75 4.79433ZM7.05 0.357082C8.1 1.68826 8.55 3.16734 8.55 4.49851C8.55 6.42132 7.65 8.19622 5.85 10.119C3.75 12.3377 1.8 14.8521 1.8 17.2186C1.8 17.6623 1.95 18.254 2.1 18.5498C2.1 18.6977 2.1 18.6977 1.95 18.8456C1.8 18.9935 1.65 18.8456 1.65 18.8456C0.45 17.3665 0 15.8874 0 14.5563C0 12.6335 0.9 10.8586 2.7 8.93576C4.8 6.71714 6.75 4.2027 6.75 1.83616C6.75 1.39244 6.6 0.800807 6.45 0.50499V0.209174C6.75 0.209174 6.9 0.209174 7.05 0.357082ZM7.65 11.8939C10.5 8.93576 13.05 5.68178 13.05 2.4278C13.05 1.83616 12.9 1.24453 12.75 0.50499C12.75 0.357082 12.75 0.209174 12.9 0.0612656C13.05 -0.0866427 13.2 0.0612656 13.2 0.209174C14.7 2.13198 15.45 3.90688 15.45 5.9776C15.45 8.49204 14.4 10.8586 11.85 13.5209C9 16.4791 6.45 19.7331 6.45 22.987C6.45 23.5787 6.6 24.1703 6.75 24.9099C6.75 25.0578 6.75 25.2057 6.6 25.3536C6.45 25.5015 6.3 25.3536 6.3 25.2057C4.8 23.2829 4.05 21.508 4.05 19.4372C4.05 16.9228 5.1 14.5563 7.65 11.8939Z" fill="black"/>
+                        </svg>
+                    <!-- <i class='bx bxs-watch nav__logo-icon'> --></i> Aromia
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
@@ -32,13 +38,13 @@
                             <a href="#home" class="nav__link active-link">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#featured" class="nav__link">Featured</a>
+                            <a href="#featured" class="nav__link">Destacados</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#products" class="nav__link">Products</a>
+                            <a href="#products" class="nav__link">Productos</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#new" class="nav__link">New</a>
+                            <a href="#new" class="nav__link">Nuevo</a>
                         </li>
                     </ul>
 
@@ -49,11 +55,11 @@
 
                 <div class="nav__btns">
                     <!-- Theme change button -->
-                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+                    <!-- <i class='bx bx-moon change-theme' id="theme-button"></i> -->
 
-                    <div class="nav__shop" id="cart-shop">
+                    <!-- <div class="nav__shop" id="cart-shop">
                         <i class='bx bx-shopping-bag' ></i>
-                    </div>
+                    </div> -->
 
                     <div class="nav__toggle" id="nav-toggle">
                         <i class='bx bx-grid-alt' ></i>
@@ -63,7 +69,7 @@
         </header>
 
         <!--==================== CART ====================-->
-        <div class="cart" id="cart">
+        <!-- <div class="cart" id="cart">
             <i class='bx bx-x cart__close' id="cart-close"></i>
 
             <h2 class="cart__title-center">My Cart</h2>
@@ -155,7 +161,7 @@
                 <span class="cart__prices-item">3 items</span>
                 <span class="cart__prices-total">$2880</span>
             </div>
-        </div>
+        </div> -->
 
         <!--==================== MAIN ====================-->
         <main class="main">
@@ -163,7 +169,7 @@
             <section class="home" id="home">
                 <div class="home__container container grid">
                     <div class="home__img-bg">
-                        <img src="assets/img/home.png" alt="" class="home__img">
+                        <img src="assets/img/imghome.png" alt="" class="home__img">
                     </div>
     
                     <div class="home__social">
@@ -179,26 +185,25 @@
                     </div>
     
                     <div class="home__data">
-                        <h1 class="home__title">NEW WATCH <br> COLLECTIONS B720</h1>
+                        <h1 class="home__title">Encuentra tu Esencia Perfecta</h1>
                         <p class="home__description">
-                            Latest arrival of the new imported watches of the B720 series, 
-                            with a modern and resistant design.
+                            El perfume que te transporta a un mundo de sofisticación y belleza.
                         </p>
-                        <span class="home__price">$1245</span>
+                        <!-- <span class="home__price">$1245</span> -->
 
                         <div class="home__btns">
                             <a href="#" class="button button--gray button--small">
-                                Discover
+                                Descubralo
                             </a>
 
-                            <button class="button home__button">ADD TO CART</button>
+                            <button class="button home__button">COMPRAR</button>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!--==================== FEATURED ====================-->
-            <section class="featured section container" id="featured">
+            <!-- <section class="featured section container" id="featured">
                 <h2 class="section__title">
                     Featured
                 </h2>
@@ -243,10 +248,10 @@
                         <button class="button featured__button">ADD TO CART</button>
                     </article>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== STORY ====================-->
-            <section class="story section container">
+            <!-- <section class="story section container">
                 <div class="story__container grid">
                     <div class="story__data">
                         <h2 class="section__title story__section-title">
@@ -270,10 +275,10 @@
                         <div class="story__square"></div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== PRODUCTS ====================-->
-            <section class="products section container" id="products">
+            <!-- <section class="products section container" id="products">
                 <h2 class="section__title">
                     Products
                 </h2>
@@ -334,10 +339,10 @@
                         </button>
                     </article>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section container">
+            <!-- <section class="testimonial section container">
                 <div class="testimonial__container grid">
                     <div class="swiper testimonial-swiper">
                         <div class="swiper-wrapper">
@@ -418,10 +423,10 @@
                         <img src="assets/img/testimonial.png" alt="" class="testimonial__img">
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== NEW ====================-->
-            <section class="new section container" id="new">
+            <!-- <section class="new section container" id="new">
                 <h2 class="section__title">
                     New Arrivals
                 </h2>
@@ -483,10 +488,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== NEWSLETTER ====================-->
-            <section class="newsletter section container">
+            <!-- <section class="newsletter section container">
                 <div class="newsletter__bg grid">
                     <div>
                         <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
@@ -504,11 +509,11 @@
                         </button>
                     </form>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer section">
+        <!-- <footer class="footer section">
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <h3 class="footer__title">Our information</h3>
@@ -577,7 +582,7 @@
             </div>
 
             <span class="footer__copy">&#169; Bedimcode. All rigths reserved</span>
-        </footer>
+        </footer> -->
 
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up"> 
