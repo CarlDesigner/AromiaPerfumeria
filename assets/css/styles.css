@@ -503,56 +503,11 @@ body.dark-theme {
 }
 
 /*=============== PRODUCTS ===============*/
-.products__container {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-.products__card {
-  position: relative;
-  background-color: var(--container-color);
-  padding: 1.25rem 0;
+.card {
   border: 1px solid var(--border-color);
-  text-align: center;
-  transition: .3s;
 }
 
-.products__img {
-  height: 125px;
-  margin-bottom: var(--mb-1);
-}
-
-.products__title, 
-.products__price {
-  font-size: var(--small-font-size);
-  font-weight: var(--font-medium);
-}
-
-.products__title {
-  text-transform: uppercase;
-  margin-bottom: var(--mb-0-5);
-}
-
-.products__price {
-  color: var(--first-color);
-}
-
-.products__button {
-  background-color: var(--button-color);
-  padding: .4rem;
-  color: #fff;
-  font-size: 1rem;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transition: .3s;
-}
-
-.products__button:hover {
-  background-color: var(--button-color-alt);
-}
-
-.products__card:hover {
+.card__img:hover {
   box-shadow: 0 8px 32px hsla(0, 0%, 10%, .1);
 }
 
@@ -733,6 +688,10 @@ body.dark-theme {
 .new__card:hover .new__price {
   color: hsl(0, 0%, 15%);
   margin-bottom: var(--mb-1-5);
+}
+
+.new__description {
+  text-align: center;
 }
 
 /*=============== NEWSLETTER ===============*/
@@ -1094,15 +1053,15 @@ body.dark-theme {
   }
 
   .products__container {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(2, 400px);
     justify-content: center;
-    gap: 2.5rem;
+    gap: 4.5rem;
   }
   .products__card {
     padding: 2rem 0;
   }
   .products__img {
-    height: 155px;
+    height: 200px;
   }
 
   .newsletter__bg {
@@ -1209,3 +1168,5 @@ body.dark-theme {
     right: 3rem;
   }
 }
+
+

@@ -38,13 +38,13 @@
                             <a href="#home" class="nav__link active-link">Home</a>
                         </li>
                         <li class="nav__item">
+                            <a href="#new" class="nav__link">Nuevo</a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#featured" class="nav__link">Destacados</a>
                         </li>
                         <li class="nav__item">
                             <a href="#products" class="nav__link">Productos</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#new" class="nav__link">Nuevo</a>
                         </li>
                     </ul>
 
@@ -193,7 +193,7 @@
 
                         <div class="home__btns">
                             <a href="#" class="button button--gray button--small">
-                                Descubralo
+                                Descúbrelo
                             </a>
 
                             <button class="button home__button">COMPRAR</button>
@@ -202,12 +202,84 @@
                 </div>
             </section>
 
-            <!--==================== FEATURED ====================-->
+            <!--==================== NUEVOS PRODUCTOS ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__title">
+                    Lo NUEVO
+                </h2>
+                <p class="new__description">
+                    ¡Descubre los nuevos productos que te sorprenderán!
+                </p>
+                
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="https://res.cloudinary.com/do66lfayc/image/upload/v1686041534/Orientica_Amber_Rouge_mmhlvp.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Orientica Amber Rouge</h3>
+                                    <span class="new__price">$150.000</span>
+                                </div>
+        
+                                <button class="button new__button">COMPRAR</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="https://res.cloudinary.com/do66lfayc/image/upload/v1686041534/Al_Haramain_Amber_Oud_f2uey7.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Al Haramain Amber Oud</h3>
+                                    <span class="new__price">$150.000</span>
+                                </div>
+        
+                                <button class="button new__button">COMPRAR</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="https://res.cloudinary.com/do66lfayc/image/upload/v1686041534/Ilmin_Il_Femme_zor4gf.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Ilmin Il Femme</h3>
+                                    <span class="new__price">$150.000</span>
+                                </div>
+        
+                                <button class="button new__button">COMPRAR</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="https://res.cloudinary.com/do66lfayc/image/upload/v1686041534/Initio_Oud_for_Greatness_qpyrbk.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Initio Oud for Greatness</h3>
+                                    <span class="new__price">$150.000</span>
+                                </div>
+        
+                                <button class="button new__button">COMPRAR</button>
+                            </article>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--==================== DESTACADOS ====================-->
             <section class="featured section container" id="featured">
                 <h2 class="section__title">
                     Destacados
                 </h2>
-
+                <p class="new__description">
+                    ¡Descubre el perfume favorito de nuestros clientes y déjate seducir por su increíble calidad y fragancia cautivadora.
+                </p>
+                
                 <div class="featured__container grid">
                     <article class="featured__card">
                         <span class="featured__tag">Oferta</span>
@@ -289,7 +361,7 @@
                 </div>
             </section>
 
-            <!--==================== STORY ====================-->
+            <!--==================== PARA TI ====================-->
             <section class="story section container">
                 <div class="story__container grid">
                     <div class="story__data">
@@ -315,67 +387,16 @@
                 </div>
             </section>
 
-            <!--==================== PRODUCTS ====================-->
+            <!--==================== PRODUCTOS ====================-->
             <!-- <section class="products section container" id="products">
                 <h2 class="section__title">
                     Products
                 </h2>
 
                 <div class="products__container grid">
-                    <article class="products__card">
-                        <img src="assets/img/product1.png" alt="" class="products__img">
 
-                        <h3 class="products__title">Spirit rose</h3>
-                        <span class="products__price">$1500</span>
+                    
 
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button>
-                    </article>
-
-                    <article class="products__card">
-                        <img src="assets/img/product2.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Khaki pilot</h3>
-                        <span class="products__price">$1350</span>
-
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button>
-                    </article>
-
-                    <article class="products__card">
-                        <img src="assets/img/product3.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Jubilee black</h3>
-                        <span class="products__price">$870</span>
-
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button>
-                    </article>
-
-                    <article class="products__card">
-                        <img src="assets/img/product4.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Fosil me3</h3>
-                        <span class="products__price">$650</span>
-
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button>
-                    </article>
-
-                    <article class="products__card">
-                        <img src="assets/img/product5.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Duchen</h3>
-                        <span class="products__price">$950</span>
-
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button>
-                    </article>
                 </div>
             </section> -->
 
@@ -463,71 +484,7 @@
                 </div>
             </section> -->
 
-            <!--==================== NEW ====================-->
-            <!-- <section class="new section container" id="new">
-                <h2 class="section__title">
-                    New Arrivals
-                </h2>
-                
-                <div class="new__container">
-                    <div class="swiper new-swiper">
-                        <div class="swiper-wrapper">
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">New</span>
-        
-                                <img src="assets/img/new1.png" alt="" class="new__img">
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Longines rose</h3>
-                                    <span class="new__price">$980</span>
-                                </div>
-        
-                                <button class="button new__button">ADD TO CART</button>
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">New</span>
-        
-                                <img src="assets/img/new2.png" alt="" class="new__img">
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Jazzmaster</h3>
-                                    <span class="new__price">$1150</span>
-                                </div>
-        
-                                <button class="button new__button">ADD TO CART</button>
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">New</span>
-        
-                                <img src="assets/img/new3.png" alt="" class="new__img">
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Dreyfuss gold</h3>
-                                    <span class="new__price">$750</span>
-                                </div>
-        
-                                <button class="button new__button">ADD TO CART</button>
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">New</span>
-        
-                                <img src="assets/img/new4.png" alt="" class="new__img">
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Portuguese rose</h3>
-                                    <span class="new__price">$1590</span>
-                                </div>
-        
-                                <button class="button new__button">ADD TO CART</button>
-                            </article>                       
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
+            
             <!--==================== NEWSLETTER ====================-->
             <!-- <section class="newsletter section container">
                 <div class="newsletter__bg grid">
