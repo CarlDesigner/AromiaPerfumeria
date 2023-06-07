@@ -53,6 +53,10 @@ let testimonialSwiper = new Swiper(".testimonial-swiper", {
 let newSwiper = new Swiper(".new-swiper", {
     spaceBetween: 24,
     loop: 'true',
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
 
     breakpoints: {
         576: {
