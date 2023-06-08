@@ -151,3 +151,12 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*=============== COMEBACK MESSAGE ===============*/ 
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+    document.title = "Vuelve :(";
+});
+window.addEventListener("focus", () => {
+    document.title = docTitle;
+});

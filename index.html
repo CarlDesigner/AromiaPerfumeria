@@ -512,12 +512,15 @@
                             Únete a nuestra comunidad y recibe en tu bandeja de entrada noticias exclusivas, consejos de expertos y ofertas especiales
                         </p>
                     </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="newsletter__subscribe">
+                        <input type="hidden" name="access_key" value="d6b8d78e-a596-4cfc-9c08-566848bf1f46">
+                        <input type="hidden" name="redirect" value="https://aromia.vercel.app/#home">
 
-                    <form action="" class="newsletter__subscribe">
-                        <input type="email" placeholder="Escribe tu correo electrónico" class="newsletter__input">
+                        <input type="email" name="email" required placeholder="Escribe tu correo electrónico" class="newsletter__input">
                         <button class="button">
                             SUBSCRÍBETE
                         </button>
+                        
                     </form>
                 </div>
             </section>
