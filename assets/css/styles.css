@@ -776,6 +776,10 @@ body.dark-theme {
   color: var(--text-color-light);
 }
 
+.footer__copy a {
+  color: #000;
+}
+
 /*=============== SCROLL UP ===============*/
 .scrollup {
   position: fixed;
